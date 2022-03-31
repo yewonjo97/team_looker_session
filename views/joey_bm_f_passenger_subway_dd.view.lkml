@@ -41,8 +41,8 @@ view: joey_bm_f_passenger_subway_dd {
 
   dimension: rush_hours{
     type: string
-    sql: case when ${tm_range_cd} in ('07','08') then '출근시간'
-              when ${tm_range_cd} in ('18','19') then '퇴근시간'
+    sql: case when ${tm_range_cd} in ('07','08') then '출근시간(07~09)'
+              when ${tm_range_cd} in ('18','19') then '퇴근시간(18~20)'
               else '보통시간' end;;
   }
 
